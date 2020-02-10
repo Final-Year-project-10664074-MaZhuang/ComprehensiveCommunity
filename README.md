@@ -392,7 +392,69 @@ Initial needs were identified based on previous background research and user res
 
 ## 1.8 Development Approach 
 
+- **Development Language** 
 
+  1. Language comparison
+
+     The syntax is similar to C language, so programmers who have learned C language can quickly become familiar with PHP development. And java needs to learn java's syntax and familiar with some core class libraries, and understand object-oriented programming methods. So java is not as easy to learn as php.
+
+     Java must first be compiled into a bytecode .class file, and then interpreted and executed on the Java virtual machine. The first easiest way to think of Java's Web development is JSP (now to JSP2.0). The original Java Web development was used, so JSP appeared later. JSP can be easily embedded in HTML files. When executed on the server, it is first converted into a servlet by the application server, and then compiled and executed. Jsp can generate powerful features through servlet and JavaBean support. JavaBean is a replaceable, cross-platform software component. Using javabean can easily achieve the separation of java code and html, which can enhance the system's functionality and software overlap.
+
+     And all aspects of Java Web development are included in J2EE, such as: JSP, Servlet, JDBC, JNDI, JAVABEAN, EJB, etc. J2EE is particularly suitable for large enterprise applications
+
+  2. Database access comparison
+
+     Java accesses the database through JDBC, and easily accesses the database through database drivers provided by different database vendors. The interface to access the database is relatively uniform.
+
+     PHP uses different database access interfaces for different databases, so the universality of database access code is not strong. For example: Web applications developed in Java need to be modified from MySQL database to Oracle database. PHP requires a lot of modification.
+
+  3. Comparison of system design architectures
+
+     Using Java's Web development technology, it is necessary to use an object-oriented system design method, while PHP still uses a process-oriented development method. Therefore, a lot of system analysis and design work needs to be done in the early stage of development with Java.
+
+  4. Cross-platform
+
+     Both Java and PHP have good cross-platform features. Almost all can run on different operating systems such as Linux or Windows without any modification.
+
+  5. Comparison of distributed multilayer architectures
+
+     PHP can only implement a simple distributed two-tier or three-tier architecture, while JAVA is more powerful in this respect and can implement a multi-layer network architecture. The database layer (persistence layer), application (business) logic layer, and presentation logic layer are separated from each other, and now different layers have been supported by some mature development frameworks. For example, Struts uses Java's Web development technology to implement the MVC design pattern. There is also a Spring framework in the business logic layer, and Hibernate and other frameworks in the database persistence layer. These frameworks can facilitate developers to efficiently, rationally and scientifically structure multi-tier business applications.
+
+  6. Source code security
+
+     The source code of programs developed by PHP is public, and others can modify the programs developed by PHP.
+
+     The program developed by Java, in the end, the user gets only some compiled class classes, and cannot see the complete source code, which is highly secure.
+
+  7. Performance comparison
+
+     In the loop performance test, it took amazing four seconds to end the 20,000 * 20000 loop. The PHP test was 2000 * 2000 cycles (an order of magnitude less), but took 63 seconds each.
+     In the database test, the two performed 1000 inserts, updates, selects, and deletes on Oracle 8 respectively: JSP takes 13 seconds, and PHP takes 69 seconds.
+
+     | Activity                 | PHP                        | JAVA              |
+     | ------------------------ | -------------------------- | ----------------- |
+     | Reusability              | Low                        | High              |
+     | Development speed        | High                       | Low               |
+     | Maintainability          | Low                        | High              |
+     | Portability              | Linux                      | Windows,Unix      |
+     | Safety                   | Low                        | High              |
+     | Multi-layer architecture | Low                        | High              |
+     | Database access          | Interfaces are not uniform | Unified interface |
+     | Scalability              | Low                        | High              |
+     | Object-oriented          | Low                        | High              |
+
+
+- **Database** 
+
+  - Relational Database
+
+    MySQL
+
+  - Non-relational database
+
+    MongoDB
+
+    Neo4J
 
 # 2.0 Project Management 
 
