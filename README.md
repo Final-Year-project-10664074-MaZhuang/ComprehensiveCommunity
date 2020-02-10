@@ -285,27 +285,114 @@ A total of 50 questionnaires were distributed and 50 were recovered, of which 47
 
 Initial needs were identified based on previous background research and user research. Following is a list of requirements.
 
-### 1.6.1 Functional Requirement
+### Functional Requirement
 
+- **User Management**
+  1. Registered
+  2. Log in
+  3. Increase user
+  4. Delete users
+  5. Modify user
+  6. Search users
 
+- **Security Settings**
+  1. Role authorization
+  2. Permission settings
 
-### 1.6.2 Non-functional Requirements
+- **Question and answer management**
+  1. Post a question
+  2. Edit question
+  3. Delete question
+  4. Question category
+  5. Set label
+  6. Upload image
+  7. Fuzzy query
+  8. Hottest Sort
+  9. Reading statistics
+  10. Best answer sticky
 
+- **Blog management**
+  1. Post a blog
+  2. Edit blog
+  3. Delete blog
+  4. Question blog
+  5. Set label
+  6. Upload image
+  7. Fuzzy query
+  8. Hottest Sort
+  9. Reading statistics
 
+- **Comment management**
+  1. Post a comment
+  2. Delete comment
+  3. Comment statistics
 
-### 1.6.3 UML (Top-level use case diagrams)
+- **Like management**
+  1. Like
+  2. Cancel like
+  3. Like statistics
+
+- **Classification management**
+  1. Create Category
+  2. Delete Category
+  3. Update Category
+  4. Search by category
+
+- **Tag management**
+  1. Create tag
+  2. Delete tag
+  3. Update tag
+  4. Search by tag
+
+- **Home Search**
+  1. Full Text Search
+  2. Latest questions
+  3. Latest articles
+  4. Hottest question
+  5. Hottest Articles
+  6. Popular tags
+  7. Popular users
+  8. Popular articles
+  9. Popular questions
+  10. Latest release
+
+- **Online chatting**
+  1. Follow users
+  2. Cancel follow  
+  3. Show if the other party is online
+  4. Online chatting 
 
 ## 1.7 Project Aim
 
-### 1.7.1 SMART
+### SMART
 
 - **Specific**
+
+  1. Make sure to complete a requirement every day after entering the development phase and submit it to GitHub.
+  2. Persist in code review every day, and record and analyse the problems found in each review to ensure that the modification is completed the next day.
+
 - **Measurable** 
+
+  1. Through GitHub and weekly meetings, Trello ensures transparency in the development process.
+  2. Establish an application-level story verification form to ensure the fourfold verification of sales, experts, bosses, and customers before the product is officially developed.
+
 - **Attainable** 
+
+  In early May, the new version of the inquiry and price comparison procurement and the supporting basic modules were launched.
+
 - **Relevant** 
+
+  1. Automate testing of 51 key features for 3 core applications that have been cured.
+  2. Every day must complete the goals of the day.
+
 - **Time-based** 
 
+  1. Submit Trello Board on time every Monday at 12 noon.
+  2. Feedback to users, timely modification.
+
 ## 1.8 Development Approach 
+
+
 
 # 2.0 Project Management 
 
