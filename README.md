@@ -460,9 +460,21 @@ Initial needs were identified based on previous background research and user res
 
 ## 2.1 Gantt chart  
 
+![](https://github.com/Ma-Zhuang/Pic/blob/master/%E6%8D%95%E8%8E%B7gantt.PNG?raw=true)
 
+![](https://github.com/Ma-Zhuang/Pic/blob/master/%E6%8D%95%E8%8E%B7gantt2.PNG?raw=true)
 
-## 2.2 Milestone 
+## 2.2 Risk
+
+According to the project's Gantt chart, its critical path is focused on design and analysis. This shows that the risk of this project lies in changes in user needs.
+
+There are certain risks in determining user requirements and background research in the planning stage. In addition, there are risks in designing system models during the development stage. To reduce risk:
+
+1. Find existing similar systems for functional analysis. Whenever possible, look for features with good user feedback. In short, take the essence and discard the dross.
+2. When the user needs are obtained by issuing a questionnaire, some dirty data may be collected, which will affect the accuracy of the needs. Therefore, as many questionnaires as possible should be distributed when issuing the questionnaire to expand the scope of the collected data and reduce the impact of dirty data on the results.
+3. When analysing and designing a system, there may be situations where developers do not understand the system requirements. Therefore, it is necessary to find similar functions in existing similar systems as much as possible, so as to increase development efficiency, reduce development direction errors, and ultimately perfectly realize user requirements.
+
+## 2.3 Milestone 
 
 |            Milestone Name            |    Deadline    |     Complete Content      |
 | :----------------------------------: | :------------: | :-----------------------: |
@@ -473,15 +485,11 @@ Initial needs were identified based on previous background research and user res
 | Complete all functions of the system |  May 1, 2020   | Integrating all prototype |
 |   Complete testing and deployment    |  May 8, 2020   |         Deployed          |
 
-## 2.3  Approach 
+## 2.4 Approach 
 
 This development uses the PRINCE2 method for project management. It is mainly product-oriented content. Reduce unnecessary work and speed up product realization.
 
 The development is divided into three major phases: analysis phase, development phase, and deployment phase. The main work of the analysis phase is background investigation, identifying and analysing user needs, and its ultimate purpose is to determine the initial requirements of the project. After completing this phase, there will be a completed set of requirements reports. Secondly, the development phase is mainly to achieve the needs of users, and the integrity of the function can be achieved through testing. After the completion of a functional point in the development stage, a prototype system will be implemented to get user feedback, and then change the requirements to further approximate the user's real needs. Finally, the main purpose of the final deployment phase is to provide real-time experience for potential users and further obtain user feedback. And timely change the function to further improve the system availability.
-
-## 2.4 Risk
-
-
 
 ## 2.5 MVP
 
@@ -521,5 +529,36 @@ Notification
 
 ## 3.1 Internal Test
 
+1. **Test Methods**
+
+   - **Static test method**
+
+     There is less application data in the test process. The main process is to complete the test process by manual inference or the correctness of the calculation methods and algorithms in the computer-aided test program. The advantage of this type of test is that it can be completed in a shorter time and with less resources Testing of software and software code can clearly find errors in such code.
+
+   - **dynamics test**
+
+     The main purpose of computer dynamic testing is to detect problems that occur during software operation. Compared with static testing methods, the reason why it is called dynamic is that its testing method mainly relies on the use of programs. Whether the software works well. The most obvious feature is that the software is running during dynamic testing. Only in this way can software defects be found during use, and then such defects can be repaired. Two types of factors can be included in the dynamic test process, namely the software under test and the data required for the test. The two types of factors determine the correct and effective development of the dynamic test.
+
+   - **Black box test**
+
+     Observe the data output through data input and check whether the internal function of the software is normal. When the test is unfolded, data is entered into the software and waits for data to be output. If the data output is consistent with the expected data, it proves that the software passes the test. If the data is different from the expected data, even if the difference is small, it also proves that there is a problem in the software program and it needs to be resolved as soon as possible.
+
+   - **White box test**
+
+     This type of testing method covers all types of code in the program, and covers a wide range, which is suitable for multi-type programs. After testing the unknown errors in the dynamic detection method, first use the black box detection method. If the program input data is the same as the output data, it proves that there is no problem with the internal data, and it should be analyzed from the code side. If there is a problem, use it. The white box test method analyzes the internal structure of the software until the problem is detected and modified in a timely manner.
+
+2. Test strategy
+
+   - **unit test**
+
+     The advantage of this type of testing strategy is that it requires less analysis data and is more targeted. The program developer can determine the general area of the problem through operation experience during the development process, and then analyse the relevant units for such problems and carry out Troubleshoot.
+
+   - **Integration Testing**
+
+     For this system, the integration test method is more complicated than the unit test method, and it should be tested gradually. The incremental test method is a derivative of the integration test method. It can test the software in different orders. In the test, the two types of integration tests are performed, and then the selection is performed in order.
+
 ## 3.2 User test
 
+1. **Usability test**
+
+   The user really uses the software system, and the experimenter observes, records and measures the experimental process. So as to accurately feedback the performance of users and reflect their needs. During user testing, the developer observes and tests the user's actual use site. After the user test, the data obtained in the test needs to be compiled and summarized, such as the average time, median value, range, and standard deviation of the completion time, and the percentage of users who successfully completed the task. For a single interaction, the user makes a variety of different tendencies. Histogram representation etc. Then analyze the data and write a final test report based on the severity and urgency of the problem.
