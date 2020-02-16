@@ -460,19 +460,62 @@ Initial needs were identified based on previous background research and user res
 
 ## 2.1 Gantt chart  
 
+
+
 ## 2.2 Milestone 
 
-## 2.3 Main Task
+|            Milestone Name            |    Deadline    |     Complete Content      |
+| :----------------------------------: | :------------: | :-----------------------: |
+|   Complete basic system functions    | March 16, 2020 |     System prototype      |
+| Add features based on user feedback  | April 1, 2020  |     System prototype      |
+|     Added notification function      | April 20, 2020 |     System prototype      |
+|            Notify by mail            | April 28, 2020 |     System prototype      |
+| Complete all functions of the system |  May 1, 2020   | Integrating all prototype |
+|   Complete testing and deployment    |  May 8, 2020   |         Deployed          |
 
-## 2.4 Resource table
+## 2.3  Approach 
 
-## 2.5  Approach 
+This development uses the PRINCE2 method for project management. It is mainly product-oriented content. Reduce unnecessary work and speed up product realization.
 
-## 2.6 Meeting
+The development is divided into three major phases: analysis phase, development phase, and deployment phase. The main work of the analysis phase is background investigation, identifying and analysing user needs, and its ultimate purpose is to determine the initial requirements of the project. After completing this phase, there will be a completed set of requirements reports. Secondly, the development phase is mainly to achieve the needs of users, and the integrity of the function can be achieved through testing. After the completion of a functional point in the development stage, a prototype system will be implemented to get user feedback, and then change the requirements to further approximate the user's real needs. Finally, the main purpose of the final deployment phase is to provide real-time experience for potential users and further obtain user feedback. And timely change the function to further improve the system availability.
 
-## 2.7 Risk
+## 2.4 Risk
 
-## 2.8 MVP
+
+
+## 2.5 MVP
+
+The first version of the system basically realized all the user needs, but it was only implemented without optimization, UI and other details. The main purpose of the MVP model is to quickly obtain MDP (the system that users expect). During this period, multiple iterations are required to achieve the perfect system.
+
+The basic functions of the MVP model of the system are as follows:
+
+**Blog module**
+
+Blog management
+
+Comment response management
+
+Like management
+
+Full Text Search
+
+**Q & A module**
+
+Problem management
+
+Comment response management
+
+Like management
+
+Full Text Search
+
+**User module**
+
+User Management
+
+Authority management
+
+Notification
 
 # 3.0 Verification & validation 
 
