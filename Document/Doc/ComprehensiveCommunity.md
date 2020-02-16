@@ -285,49 +285,280 @@ A total of 50 questionnaires were distributed and 50 were recovered, of which 47
 
 Initial needs were identified based on previous background research and user research. Following is a list of requirements.
 
-### 1.6.1 Functional Requirement
+### Functional Requirement
 
+- **User Management**
+  1. Registered
+  2. Log in
+  3. Increase user
+  4. Delete users
+  5. Modify user
+  6. Search users
 
+- **Security Settings**
+  1. Role authorization
+  2. Permission settings
 
-### 1.6.2 Non-functional Requirements
+- **Question and answer management**
+  1. Post a question
+  2. Edit question
+  3. Delete question
+  4. Question category
+  5. Set label
+  6. Upload image
+  7. Fuzzy query
+  8. Hottest Sort
+  9. Reading statistics
+  10. Best answer sticky
 
+- **Blog management**
+  1. Post a blog
+  2. Edit blog
+  3. Delete blog
+  4. Question blog
+  5. Set label
+  6. Upload image
+  7. Fuzzy query
+  8. Hottest Sort
+  9. Reading statistics
 
+- **Comment management**
+  1. Post a comment
+  2. Delete comment
+  3. Comment statistics
 
-### 1.6.3 UML (Top-level use case diagrams)
+- **Like management**
+  1. Like
+  2. Cancel like
+  3. Like statistics
+
+- **Classification management**
+  1. Create Category
+  2. Delete Category
+  3. Update Category
+  4. Search by category
+
+- **Tag management**
+  1. Create tag
+  2. Delete tag
+  3. Update tag
+  4. Search by tag
+
+- **Home Search**
+  1. Full Text Search
+  2. Latest questions
+  3. Latest articles
+  4. Hottest question
+  5. Hottest Articles
+  6. Popular tags
+  7. Popular users
+  8. Popular articles
+  9. Popular questions
+  10. Latest release
+
+- **Online chatting**
+  1. Follow users
+  2. Cancel follow  
+  3. Show if the other party is online
+  4. Online chatting 
 
 ## 1.7 Project Aim
 
-### 1.7.1 SMART
+### SMART
 
 - **Specific**
+
+  1. Make sure to complete a requirement every day after entering the development phase and submit it to GitHub.
+  2. Persist in code review every day, and record and analyse the problems found in each review to ensure that the modification is completed the next day.
+
 - **Measurable** 
+
+  1. Through GitHub and weekly meetings, Trello ensures transparency in the development process.
+  2. Establish an application-level story verification form to ensure the fourfold verification of sales, experts, bosses, and customers before the product is officially developed.
+
 - **Attainable** 
+
+  In early May, the new version of the inquiry and price comparison procurement and the supporting basic modules were launched.
+
 - **Relevant** 
+
+  1. Automate testing of 51 key features for 3 core applications that have been cured.
+  2. Every day must complete the goals of the day.
+
 - **Time-based** 
 
+  1. Submit Trello Board on time every Monday at 12 noon.
+  2. Feedback to users, timely modification.
+
 ## 1.8 Development Approach 
+
+- **Development Language** 
+
+  1. Language comparison
+
+     The syntax is similar to C language, so programmers who have learned C language can quickly become familiar with PHP development. And java needs to learn java's syntax and familiar with some core class libraries, and understand object-oriented programming methods. So java is not as easy to learn as php.
+
+     Java must first be compiled into a bytecode .class file, and then interpreted and executed on the Java virtual machine. The first easiest way to think of Java's Web development is JSP (now to JSP2.0). The original Java Web development was used, so JSP appeared later. JSP can be easily embedded in HTML files. When executed on the server, it is first converted into a servlet by the application server, and then compiled and executed. Jsp can generate powerful features through servlet and JavaBean support. JavaBean is a replaceable, cross-platform software component. Using javabean can easily achieve the separation of java code and html, which can enhance the system's functionality and software overlap.
+
+     And all aspects of Java Web development are included in J2EE, such as: JSP, Servlet, JDBC, JNDI, JAVABEAN, EJB, etc. J2EE is particularly suitable for large enterprise applications
+
+  2. Database access comparison
+
+     Java accesses the database through JDBC, and easily accesses the database through database drivers provided by different database vendors. The interface to access the database is relatively uniform.
+
+     PHP uses different database access interfaces for different databases, so the universality of database access code is not strong. For example: Web applications developed in Java need to be modified from MySQL database to Oracle database. PHP requires a lot of modification.
+
+  3. Comparison of system design architectures
+
+     Using Java's Web development technology, it is necessary to use an object-oriented system design method, while PHP still uses a process-oriented development method. Therefore, a lot of system analysis and design work needs to be done in the early stage of development with Java.
+
+  4. Cross-platform
+
+     Both Java and PHP have good cross-platform features. Almost all can run on different operating systems such as Linux or Windows without any modification.
+
+  5. Comparison of distributed multilayer architectures
+
+     PHP can only implement a simple distributed two-tier or three-tier architecture, while JAVA is more powerful in this respect and can implement a multi-layer network architecture. The database layer (persistence layer), application (business) logic layer, and presentation logic layer are separated from each other, and now different layers have been supported by some mature development frameworks. For example, Struts uses Java's Web development technology to implement the MVC design pattern. There is also a Spring framework in the business logic layer, and Hibernate and other frameworks in the database persistence layer. These frameworks can facilitate developers to efficiently, rationally and scientifically structure multi-tier business applications.
+
+  6. Source code security
+
+     The source code of programs developed by PHP is public, and others can modify the programs developed by PHP.
+
+     The program developed by Java, in the end, the user gets only some compiled class classes, and cannot see the complete source code, which is highly secure.
+
+  7. Performance comparison
+
+     In the loop performance test, it took amazing four seconds to end the 20,000 * 20000 loop. The PHP test was 2000 * 2000 cycles (an order of magnitude less), but took 63 seconds each.
+     In the database test, the two performed 1000 inserts, updates, selects, and deletes on Oracle 8 respectively: JSP takes 13 seconds, and PHP takes 69 seconds.
+
+     | Activity                 | PHP                        | JAVA              |
+     | ------------------------ | -------------------------- | ----------------- |
+     | Reusability              | Low                        | High              |
+     | Development speed        | High                       | Low               |
+     | Maintainability          | Low                        | High              |
+     | Portability              | Linux                      | Windows,Unix      |
+     | Safety                   | Low                        | High              |
+     | Multi-layer architecture | Low                        | High              |
+     | Database access          | Interfaces are not uniform | Unified interface |
+     | Scalability              | Low                        | High              |
+     | Object-oriented          | Low                        | High              |
+
+
+- **Database** 
+
+  - Relational Database
+
+    MySQL
+
+  - Non-relational database
+
+    MongoDB
+
+    Neo4J
 
 # 2.0 Project Management 
 
 ## 2.1 Gantt chart  
 
-## 2.2 Milestone 
+![](https://github.com/Ma-Zhuang/Pic/blob/master/%E6%8D%95%E8%8E%B7gantt.PNG?raw=true)
 
-## 2.3 Main Task
+![](https://github.com/Ma-Zhuang/Pic/blob/master/%E6%8D%95%E8%8E%B7gantt2.PNG?raw=true)
 
-## 2.4 Resource table
+## 2.2 Risk
 
-## 2.5  Approach 
+According to the project's Gantt chart, its critical path is focused on design and analysis. This shows that the risk of this project lies in changes in user needs.
 
-## 2.6 Meeting
+There are certain risks in determining user requirements and background research in the planning stage. In addition, there are risks in designing system models during the development stage. To reduce risk:
 
-## 2.7 Risk
+1. Find existing similar systems for functional analysis. Whenever possible, look for features with good user feedback. In short, take the essence and discard the dross.
+2. When the user needs are obtained by issuing a questionnaire, some dirty data may be collected, which will affect the accuracy of the needs. Therefore, as many questionnaires as possible should be distributed when issuing the questionnaire to expand the scope of the collected data and reduce the impact of dirty data on the results.
+3. When analysing and designing a system, there may be situations where developers do not understand the system requirements. Therefore, it is necessary to find similar functions in existing similar systems as much as possible, so as to increase development efficiency, reduce development direction errors, and ultimately perfectly realize user requirements.
 
-## 2.8 MVP
+## 2.3 Milestone 
+
+|            Milestone Name            |    Deadline    |     Complete Content      |
+| :----------------------------------: | :------------: | :-----------------------: |
+|   Complete basic system functions    | March 16, 2020 |     System prototype      |
+| Add features based on user feedback  | April 1, 2020  |     System prototype      |
+|     Added notification function      | April 20, 2020 |     System prototype      |
+|            Notify by mail            | April 28, 2020 |     System prototype      |
+| Complete all functions of the system |  May 1, 2020   | Integrating all prototype |
+|   Complete testing and deployment    |  May 8, 2020   |         Deployed          |
+
+## 2.4 Approach 
+
+This development uses the PRINCE2 method for project management. It is mainly product-oriented content. Reduce unnecessary work and speed up product realization.
+
+The development is divided into three major phases: analysis phase, development phase, and deployment phase. The main work of the analysis phase is background investigation, identifying and analysing user needs, and its ultimate purpose is to determine the initial requirements of the project. After completing this phase, there will be a completed set of requirements reports. Secondly, the development phase is mainly to achieve the needs of users, and the integrity of the function can be achieved through testing. After the completion of a functional point in the development stage, a prototype system will be implemented to get user feedback, and then change the requirements to further approximate the user's real needs. Finally, the main purpose of the final deployment phase is to provide real-time experience for potential users and further obtain user feedback. And timely change the function to further improve the system availability.
+
+## 2.5 MVP
+
+The first version of the system basically realized all the user needs, but it was only implemented without optimization, UI and other details. The main purpose of the MVP model is to quickly obtain MDP (the system that users expect). During this period, multiple iterations are required to achieve the perfect system.
+
+The basic functions of the MVP model of the system are as follows:
+
+**Blog module**
+
+Blog management
+
+Comment response management
+
+Like management
+
+Full Text Search
+
+**Q & A module**
+
+Problem management
+
+Comment response management
+
+Like management
+
+Full Text Search
+
+**User module**
+
+User Management
+
+Authority management
+
+Notification
 
 # 3.0 Verification & validation 
 
 ## 3.1 Internal Test
 
+1. **Test Methods**
+
+   - **Static test method**
+
+     There is less application data in the test process. The main process is to complete the test process by manual inference or the correctness of the calculation methods and algorithms in the computer-aided test program. The advantage of this type of test is that it can be completed in a shorter time and with less resources Testing of software and software code can clearly find errors in such code.
+
+   - **dynamics test**
+
+     The main purpose of computer dynamic testing is to detect problems that occur during software operation. Compared with static testing methods, the reason why it is called dynamic is that its testing method mainly relies on the use of programs. Whether the software works well. The most obvious feature is that the software is running during dynamic testing. Only in this way can software defects be found during use, and then such defects can be repaired. Two types of factors can be included in the dynamic test process, namely the software under test and the data required for the test. The two types of factors determine the correct and effective development of the dynamic test.
+
+   - **Black box test**
+
+     Observe the data output through data input and check whether the internal function of the software is normal. When the test is unfolded, data is entered into the software and waits for data to be output. If the data output is consistent with the expected data, it proves that the software passes the test. If the data is different from the expected data, even if the difference is small, it also proves that there is a problem in the software program and it needs to be resolved as soon as possible.
+
+   - **White box test**
+
+     This type of testing method covers all types of code in the program, and covers a wide range, which is suitable for multi-type programs. After testing the unknown errors in the dynamic detection method, first use the black box detection method. If the program input data is the same as the output data, it proves that there is no problem with the internal data, and it should be analyzed from the code side. If there is a problem, use it. The white box test method analyzes the internal structure of the software until the problem is detected and modified in a timely manner.
+
+2. Test strategy
+
+   - **unit test**
+
+     The advantage of this type of testing strategy is that it requires less analysis data and is more targeted. The program developer can determine the general area of the problem through operation experience during the development process, and then analyse the relevant units for such problems and carry out Troubleshoot.
+
+   - **Integration Testing**
+
+     For this system, the integration test method is more complicated than the unit test method, and it should be tested gradually. The incremental test method is a derivative of the integration test method. It can test the software in different orders. In the test, the two types of integration tests are performed, and then the selection is performed in order.
+
 ## 3.2 User test
 
+1. **Usability test**
+
+   The user really uses the software system, and the experimenter observes, records and measures the experimental process. So as to accurately feedback the performance of users and reflect their needs. During user testing, the developer observes and tests the user's actual use site. After the user test, the data obtained in the test needs to be compiled and summarized, such as the average time, median value, range, and standard deviation of the completion time, and the percentage of users who successfully completed the task. For a single interaction, the user makes a variety of different tendencies. Histogram representation etc. Then analyze the data and write a final test report based on the severity and urgency of the problem.
